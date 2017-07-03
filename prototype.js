@@ -1,6 +1,8 @@
 (function($){
 	$(function() {
-		$('.search input').focus();
-    console.log($('.search input').val());
+		initFocus();
 	});
+  function initFocus() {
+    $('.search input').focus();
+  }
 })(jQuery);
