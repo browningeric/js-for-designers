@@ -33,23 +33,6 @@
 	</header>
 	<section class="main">
 		<ul class="cards">
-			<li class="card">
-				<div class="card-shell">
-					<a href="" class="card-img"></a>
-					<div class="card-info">
-						<i class="fa fa-eye"></i>
-						<span>2,959</span>
-						<i class="fa fa-comment"></i>
-						<span>13</span>
-						<i class="fa fa-heart"></i>
-						<span>355</span>
-					</div>
-				</div>
-				<div class="card-attribution">
-					<span></span> 
-					<a href="">username</a>
-				</div>
-			</li>
 		</ul>
 	</section>
 	<div class="modal-backdrop">
@@ -98,5 +81,25 @@
 	</div>
 	<script src="https://ajax.googleapis.com/ajax/libs/jquery/2.2.0/jquery.min.js"></script>
 	<script type="text/javascript" src="prototype.js"></script>
+  <script type="text/javascript" src="templating.js"></script>
+  <script type="text/html" id="tmpl_card">
+    <li class="card">
+        <div class="card-shell">
+          <a href="" class="card-img"></a>
+          <div class="card-info">
+            <i class="fa fa-eye"></i>
+            <span>2,959</span>
+            <i class="fa fa-comment"></i>
+            <span>13</span>
+            <i class="fa fa-heart"></i>
+            <span>355</span>
+          </div>
+        </div>
+        <div class="card-attribution">
+          <span></span> 
+          <a href="">username</a>
+        </div>
+      </li>
+  </script>
 </body>
 </html>
