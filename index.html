@@ -83,21 +83,19 @@
 	<script type="text/javascript" src="prototype.js"></script>
   <script type="text/javascript" src="templating.js"></script>
   <script type="text/html" id="tmpl_card">
-    <li class="card">
+    <li class="card" id="<%=id%>">
         <div class="card-shell">
-          <a href="" class="card-img"></a>
+          <a href="" class="card-img" style="background: <%=imgColor%>;"></a>
           <div class="card-info">
             <i class="fa fa-eye"></i>
-            <span>2,959</span>
-            <i class="fa fa-comment"></i>
-            <span>13</span>
+            <span><%=views%></span>
             <i class="fa fa-heart"></i>
-            <span>355</span>
+            <span><%=likes%></span>
           </div>
         </div>
         <div class="card-attribution">
-          <span></span> 
-          <a href="">username</a>
+          <span style="background: <%=avatarColor%>;"></span> 
+          <a href=""><%=username%></a>
         </div>
       </li>
   </script>
